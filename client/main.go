@@ -636,7 +636,7 @@ func main() {
 	}
 	client.parseOptions()
 	if !client.options.cmdMode {
-		systray.Run(client._main)
+		systray.Run(client._main, nil)
 	} else {
 		client._main()
 	}
